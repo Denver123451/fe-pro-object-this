@@ -28,6 +28,6 @@ export const hotel = {
     this.placesLeft = this.placesLeft - 1;
     this.paidPerPlace();
 
-    return this.guests[this.getLength()];
+    return this.guests[this.getLength() - 1];
   },
 };
