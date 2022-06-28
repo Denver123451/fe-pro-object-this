@@ -16,10 +16,12 @@ export const hotel = {
     checkInGuest: function (firstName, lastName, money) {
         if (this.placesLeft < 1) {
             return 'Sorry, we have not free spaces'
-        };
+        }
+        ;
         if (money < 20) {
             return 'Sorry, you have not enough money'
-        };
+        }
+        ;
         this.guests[this.getLength()] = {
             firstName: firstName,
             lastName: lastName,
